@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("1.PrimeNumber\n2.FibonacciSeries");
+                Console.WriteLine("1.PrimeNumber\n2.FibonacciSeries\n3.PerfectNumber");
                 int option =Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -17,6 +17,10 @@
                     case 2:
                         FibonacciSeries series= new FibonacciSeries();
                         series.Fibonacci();
+                        break;
+                    case 3:
+                        PerfectNumber Perfe = new PerfectNumber();
+                        Perfe.Perfect();
                         break;
                 }
 
