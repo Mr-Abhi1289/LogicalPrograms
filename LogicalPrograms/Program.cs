@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("1.PrimeNumber\n2.FibonacciSeries\n3.PerfectNumber\n4.ReverseNumber\n5.StopWatch");
+                Console.WriteLine("1.PrimeNumber\n2.FibonacciSeries\n3.PerfectNumber\n4.ReverseNumber\n5.StopWatch\n6.CouponNumbers");
                 int option =Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,11 @@
                         StopWatch stop = new StopWatch();
                         stop.StartSop();
                         break;
+                    case 6:
+                        CouponNumber coupon = new CouponNumber();
+                        coupon.Coupons();
+                        break;
+
        
                 }
 
